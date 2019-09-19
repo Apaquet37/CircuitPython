@@ -3,10 +3,10 @@ My CircuitPython assignments:
 ## LED Fade
 In this assignment I learned how to code for an LED in circuitpython and then make the LED fade in and out. 
 ## Servo Capacitive Touch
-For this I
+This makes a servo move using capacitive touch. There are two wires just plugged into analog pins in the metro, and when either of them are touched, they are grounded. In this assignment, when one wire is touched the servo spins one way, and when the other is touched the servo turns the other way.
 ## LCD Screen
-Buttons
+For this, an LCD screen displays the number of times a button has been pressed. In addition, there is a switch that will change the direction the counter is going if flipped. To make sure that the button only counted up one each press, even if it was held down, I had to add in an oldButtonState variable.
 ## Photo Interrupter
-In this assignment I learned how to wire the new photo interrupters and how to code for them with circuitpython. In addition, I learned about time monotonic which allows you to 
+In this assignment I learned how to wire the new photo interrupters and how to code for them with circuitpython. In CircuitPython, a photo interrupter can be coded essentially the same as a button, making this assignment pretty easy. In addition, I learned about time monotonic which allowed me to calculate how long it had been since a loop had run, thus enabling me to have something run every four seconds without using time.sleep.
 ## Distance Sensor
-Here I used an HCSR04 ultrasonic sensor to control the internal RGB LED on the metro. The assignment was to have the LED gradually change colors corresponding to the distance the sensor was reading. For most of the sensor code I was able to look at the HCSR04 library we were using to get information. The hardest part of this assignment was figuring out how to get the RGB spectrum working smoothly with the distance values 
+Here I used an HCSR04 ultrasonic sensor to control the internal RGB LED on the metro. The assignment was to have the LED gradually change colors corresponding to the distance the sensor was reading. For most of the sensor code I was able to look at the HCSR04 library we were using to get information. The hardest part of this assignment was figuring out how to get the RGB LED spectrum working smoothly with the distance values.
