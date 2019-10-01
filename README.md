@@ -11,3 +11,4 @@ In this assignment I learned how to wire the new photo interrupters and how to c
 ## Distance Sensor
 Here I used an HCSR04 ultrasonic sensor to control the internal RGB LED on the metro. The assignment was to have the LED gradually change colors corresponding to the distance the sensor was reading. For most of the sensor code I was able to look at the HCSR04 library we were using to get information. The hardest part of this assignment was figuring out how to get the RGB LED spectrum working smoothly with the distance values.
 ## Hello VS Code
+This was an introduction to Visual Studio (VS) Code. VS Code is similar to Mu, but a big advantage it has is built in git. You can add, commit, and push your changes with git, without leaving VS Code. In addition, when you edit your README in VS Code, you can open a preview on the side and see what it will look like.
