@@ -1,6 +1,6 @@
-import board
+import board  #pylint: disable-msg=import-error
 import time
-import digitalio
+import digitalio  #pylint: disable-msg=import-error
 
 class FancyLED:
     def __init__(self,pin1,pin2,pin3):
@@ -11,10 +11,22 @@ class FancyLED:
         self.pin3 = digitalio.DigitalInOut(pin3)
         self.pin3.direction = digitalio.Direction.OUTPUT
     def alternate(self):
-
+        self.pin1 = True
+        self.pin2 = True
+        self.pin3 = True
+        time.sleep(1)
     def blink(self):
-
+        self.pin1 = True
+        self.pin2 = True
+        self.pin3 = True
+        time.sleep(1)
     def chase(self):
-
+        self.pin1 = True
+        self.pin2 = True
+        self.pin3 = True
+        time.sleep(1)
     def sparkle(self):
-        
+        self.pin1 = True
+        self.pin2 = True
+        self.pin3 = True
+        time.sleep(1)        
