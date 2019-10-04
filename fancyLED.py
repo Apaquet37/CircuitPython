@@ -11,23 +11,36 @@ class FancyLED:
         self.pin3 = digitalio.DigitalInOut(pin3)
         self.pin3.direction = digitalio.Direction.OUTPUT
     def alternate(self):
-        self.pin1 = True
-        self.pin2 = False
-        self.pin3 = True
+        self.pin1.value = True
+        self.pin2.value = False
+        self.pin3.value = True
         time.sleep(1)
-        self.pin1 = False
-        self.pin2 = True
-        self.pin3 = False
+        self.pin1.value = False
+        self.pin2.value = True
+        self.pin3.value = False
+        time.sleep(1)
     def blink(self):
-        self.pin1 = True
-        self.pin2 = True
-        self.pin3 = True
+        self.pin1.value = True
+        self.pin2.value = True
+        self.pin3.value = True
+        time.sleep(1)
+        self.pin1.value = False
+        self.pin2.value = False
+        self.pin3.value = False
         time.sleep(1)
     def chase(self):
-        self.pin1 = True
-        self.pin2 = True
-        self.pin3 = True
-        time.sleep(1)
+        self.pin1.value = True
+        self.pin2.value = False
+        self.pin3.value = False
+        time.sleep(.01)
+        self.pin1.value = False
+        self.pin2.value = True
+        self.pin3.value = False
+        time.sleep(.01)
+        self.pin1.value = False
+        self.pin2.value = False
+        self.pin3.value = True
+        time.sleep(.01)
     def sparkle(self):
         self.pin1 = True
         self.pin2 = True
