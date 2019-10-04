@@ -12,9 +12,12 @@ class FancyLED:
         self.pin3.direction = digitalio.Direction.OUTPUT
     def alternate(self):
         self.pin1 = True
-        self.pin2 = True
+        self.pin2 = False
         self.pin3 = True
         time.sleep(1)
+        self.pin1 = False
+        self.pin2 = True
+        self.pin3 = False
     def blink(self):
         self.pin1 = True
         self.pin2 = True
