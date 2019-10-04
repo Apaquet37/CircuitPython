@@ -1,7 +1,8 @@
+import board    #pylint: disable-msg=import-error
 from fancyLED import FancyLED
 
-fancy1 = FancyLED(2,3,4)
-fancy2 = FancyLED(5,6,7)
+fancy1 = FancyLED(board.D2,board.D3,board.D4)
+fancy2 = FancyLED(board.D5,board.D6,board.D7)
 
 while True:
     fancy1.alternate()
