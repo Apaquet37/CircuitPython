@@ -19,6 +19,7 @@ class FancyLED:
         self.pin2.value = True
         self.pin3.value = False
         time.sleep(1)
+        self.pin2.value = False
     def blink(self):
         self.pin1.value = True
         self.pin2.value = True
