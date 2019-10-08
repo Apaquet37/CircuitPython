@@ -1,6 +1,7 @@
 import board  #pylint: disable-msg=import-error
 import time
 import digitalio  #pylint: disable-msg=import-error
+import random
 
 class FancyLED:
     def __init__(self,pin1,pin2,pin3):
@@ -33,17 +34,42 @@ class FancyLED:
         self.pin1.value = True
         self.pin2.value = False
         self.pin3.value = False
-        time.sleep(.01)
+        time.sleep(.5)
         self.pin1.value = False
         self.pin2.value = True
         self.pin3.value = False
-        time.sleep(.01)
+        time.sleep(.5)
         self.pin1.value = False
         self.pin2.value = False
         self.pin3.value = True
-        time.sleep(.01)
+        time.sleep(.5)
+        self.pin3.value = False
+    
     def sparkle(self):
-        self.pin1 = True
-        self.pin2 = True
-        self.pin3 = True
-        time.sleep(1)        
+        for whatever in range(0,50):  #I want it to randomly flash 50 different times 
+            print(whatever)
+            print("loop, n=")
+            n= random.randint(0,3)   #It randomly chooses a number from 0-3 and then I tell it what to do for each of the numbers
+            print (n)
+            print("\n")
+            if n==0:
+                self.pin1.value = True
+                self.pin2.value = True
+                self.pin3.value = True
+            if n==1:
+                self.pin1.value = False
+                self.pin2.value = False
+                self.pin3.value = True
+            if n==2:
+                self.pin1.value = True
+                self.pin2.value = False
+                self.pin3.value = False
+            if n==3:
+                self.pin1.value = False
+                self.pin2.value = True
+                self.pin3.value = False
+            time.sleep(.05)
+            # If you don't turn them all off at the end of each command it gets really confusing. 
+            self.pin1.value = False
+            self.pin2.value = False
+            self.pin3.value = False  
