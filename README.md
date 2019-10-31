@@ -8,8 +8,11 @@ In this assignment I learned how to code for an LED in circuitpython and then ma
 This makes a servo move using capacitive touch. There are two wires just plugged into analog pins in the metro, and when either of them are touched, they are grounded. In this assignment, when one wire is touched the servo spins one way, and when the other is touched the servo turns the other way.
 ## LCD Screen
 For this, an LCD screen displays the number of times a button has been pressed. In addition, there is a switch that will change the direction the counter is going if flipped. To make sure that the button only counted up one each press, even if it was held down, I had to add in an oldButtonState variable.
+
+<img src="Media/Final%20LCD%20screen%20fritzing%20diagram%20image.png" width="600">
+
 ## Photo Interrupter
-In this assignment I learned how to wire the new photo interrupters and how to code for them with circuitpython. In CircuitPython, a photo interrupter can be coded essentially the same as a button, making this assignment pretty easy. In addition, I learned about time monotonic which allowed me to calculate how long it had been since a loop had run, thus enabling me to have something run every four seconds without using time.sleep. When the photo interrupter is interrupted, it adds to a count, and that count prints every four seconds.
+In this assignment I learned how to wire the new photo interrupters and how to code for them with circuitpython. In CircuitPython, a photo interrupter can be coded essentially the same as a button, using DigitalIn, which made this assignment pretty easy. In addition, I learned about time monotonic which allowed me to calculate how long it had been since a loop had run, thus enabling me to have something run every four seconds without using time.sleep. When the photo interrupter is interrupted, it adds to a count, and that count prints every four seconds.
 
  <img src="Media/Final%20photointerrupter%20fritzing%20diagram%20image1.png" width="500">
 
