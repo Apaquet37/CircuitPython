@@ -11,7 +11,7 @@ For this, an LCD screen displays the number of times a button has been pressed. 
 ## Photo Interrupter
 In this assignment I learned how to wire the new photo interrupters and how to code for them with circuitpython. In CircuitPython, a photo interrupter can be coded essentially the same as a button, making this assignment pretty easy. In addition, I learned about time monotonic which allowed me to calculate how long it had been since a loop had run, thus enabling me to have something run every four seconds without using time.sleep. When the photo interrupter is interrupted, it adds to a count, and that count prints every four seconds.
 
- <img src="Media/Final%20photointerrupter%20fritzing%20diagram%20image1.png" width="800">
+ <img src="Media/Final%20photointerrupter%20fritzing%20diagram%20image1.png" width="500">
 
 ## Distance Sensor
 Here I used an HCSR04 ultrasonic sensor to control the internal RGB LED on the metro. The assignment was to have the LED gradually change colors corresponding to the distance the sensor was reading. For most of the sensor code I was able to look at the HCSR04 library we were using to get information. The hardest part of this assignment was figuring out how to get the RGB LED spectrum working smoothly with the distance values.
