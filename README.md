@@ -1,5 +1,7 @@
 # CircuitPython
 My CircuitPython assignments:
+
+*As of 10/30/19, all CircuitPython code is commented*
 ## LED Fade
 In this assignment I learned how to code for an LED in circuitpython and then make the LED fade in and out. 
 ## Servo Capacitive Touch
