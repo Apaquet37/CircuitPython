@@ -24,3 +24,5 @@ The rgb LED assignment was an introduction to classes and modules. You were givi
 This was an introduction to Visual Studio (VS) Code. VS Code is similar to Mu, but a big advantage it has is built in git. You can add, commit, and push your changes with git, without leaving VS Code. In addition, when you edit your README in VS Code, you can open a preview on the side and see what it will look like.
 ## Fancy LED
 Fancy LED was another assignment similar to rgb LED, where you are getting the hang of making classes. In this one, there were four methods, alternate, blink, chase, and sparkle. For alternate, I had two leds blink and then one led blink. For blink, I had all three leds turn on at once. In chase, I had the first, then the second, then the third leds turn on in turn. For sparkle, I had a random combination of the three leds turn on 50 times really fast.
+
+<img src="Media/Final%20Fancy%20LED%20fritzing%20diagram%20image.png" width="500">
