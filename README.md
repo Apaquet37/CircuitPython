@@ -5,7 +5,7 @@ My CircuitPython assignments:
 
 A really helpful link for figuring out how to code basic things in CircuitPython that you knew how to do in Arduino. https://learn.adafruit.com/arduino-to-circuitpython
 ## LED Fade
-In this assignment I learned how to code for an LED in circuitpython and then make the LED fade in and out. In order to fade an LED instead of just turn it on or off you need to use pulseio and pwm. This means that you have to make sure that you choose all pwm pins for your LEDS as well.
+In this assignment I learned how to code for an LED in circuitpython and then make the LED fade in and out. In order to fade an LED instead of just turn it on or off you need to use pulseio and pwm. This means that you have to make sure that you choose all pwm pins for your LEDS as well. To make the LED look like it is fading in and out, you adjust the duty cycle for the LED.
 
 <img src="Media/led_fade_bb.png" width="400">
 
