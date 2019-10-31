@@ -3,9 +3,15 @@ My CircuitPython assignments:
 
 *As of 10/30/19, all CircuitPython code is commented*
 ## LED Fade
-In this assignment I learned how to code for an LED in circuitpython and then make the LED fade in and out. 
+In this assignment I learned how to code for an LED in circuitpython and then make the LED fade in and out. In order to fade an LED instead of just turn it on or off you need to use pulseio and pwm. This means that you have to make sure that you choose all pwm pins for your LEDS as well.
+
+<img src="Media/led_fade_bb.png" width="400">
+
 ## Servo Capacitive Touch
-This makes a servo move using capacitive touch. There are two wires just plugged into analog pins in the metro, and when either of them are touched, they are grounded. In this assignment, when one wire is touched the servo spins one way, and when the other is touched the servo turns the other way.
+This makes a servo move using capacitive touch. There are two wires just plugged into analog pins in the metro, and when either of them are touched, they are grounded. In this assignment, when one wire is touched the servo spins one way, and when the other is touched the servo turns the other way. Google was definitely my friend in this assignment because Capacitive Touch was a completely foreign, albeit not that complicated, concept.
+
+<img src="Media/servo_with_touch_bb.png" width="500">
+
 ## LCD Screen
 For this, an LCD screen displays the number of times a button has been pressed. In addition, there is a switch that will change the direction the counter is going if flipped. To make sure that the button only counted up one each press, even if it was held down, I had to add in an oldButtonState variable.
 
