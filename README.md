@@ -4,6 +4,14 @@ My CircuitPython assignments:
 *As of 10/30/19, all CircuitPython code is commented*
 
 A really helpful link for figuring out how to code basic things in CircuitPython that you knew how to do in Arduino. https://learn.adafruit.com/arduino-to-circuitpython
+
+## Hello CircuitPython
+CircuitPython is a new language that we are learning that is based off of python. We are also using a new board, called a Metro M0 Express. It looks pretty similar to an arduino, but is actually quite different. When you plug it into the computer, it mounts as a drive (on mine E), and whenever you save something called main.py to that drive, it uploads. When using these, you have to type "import board" at the beginning of each code to make it work properly. Also, instead of the main loop being called "void loop()" like in Arduino, it is "while True:".
+
+<img src="Media/drive.png" width="600">
+<img src="Media/metro_express.jpg" width="600">
+
+
 ## LED Fade
 In this assignment I learned how to code for an LED in circuitpython and then make the LED fade in and out. In order to fade an LED instead of just turn it on or off you need to use pulseio and pwm. This means that you have to make sure that you choose all pwm pins for your LEDS as well. To make the LED look like it is fading in and out, you adjust the duty cycle for the LED.
 
