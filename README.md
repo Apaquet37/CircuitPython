@@ -26,6 +26,10 @@ In this assignment I learned how to wire the new photo interrupters and how to c
 
 ## Distance Sensor
 Here I used an HCSR04 ultrasonic sensor to control the internal RGB LED on the metro. The assignment was to have the LED gradually change colors corresponding to the distance the sensor was reading. For most of the sensor code I was able to look at the HCSR04 library we were using to get information. The hardest part of this assignment was figuring out how to get the RGB LED spectrum working smoothly with the distance values.
+
+<img src="Media/color spectrum.png" width="600">
+
+
 ## RGB LED
 The rgb LED assignment was an introduction to classes and modules. You were giving a code that didn't work, and had to build an RGB class that would make it work. The goal was to create two rgb LED objects, and have them cycle through a number of colors. This assignment used pwm pins for the leds so that thye could fade in and out and not just stay on. One problem that I encountered during this assignment was that I got an error saying that all timers were in use. That just meant that I couldn't use certain pins all at once so I had to change some.
 
